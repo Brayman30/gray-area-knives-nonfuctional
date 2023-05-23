@@ -6,23 +6,26 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lhci:mobile": "lhci autorun",
+    "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
   },
   "devDependencies": {
     "@eslint/create-config": "0.4.3",
     "@nuxtjs/tailwindcss": "^6.7.0",
-    "@types/node": "^18",
+    "@types/node": "^18.16.14",
     "eslint": "^8.41.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.13.0",
-    "nuxt": "^3.5.0"
+    "nuxt": "^3.5.1"
   },
   "dependencies": {
     "@innologica/vue-dropdown-menu": "^0.1.4",
+    "@lhci/cli": "^0.12.0",
     "eslint-config-prettier": "^8.8.0",
-    "nuxi": "^3.5.0",
+    "nuxi": "^3.5.1",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwind-children": "^0.5.0",
     "vue-clickaway": "^2.2.2"
