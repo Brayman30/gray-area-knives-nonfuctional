@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import TopNavbar from "#components";
+// import TopNavbar from "#components";
 </script>
 
 <style>
