@@ -1,0 +1,57 @@
+500
+
+[vite-node] [plugin:vite:import-analysis] [VITE_ERROR] /app.vue
+
+import { default as __nuxt_component_0 } from "/home/braydenprice/Desktop/gray-area-knives/node_modules/.pnpm/nuxt@3.5.1_@types+node@18.16.14_eslint@8.41.0/node_modules/nuxt/dist/app/components/layout";
+import { default as __nuxt_component_1 } from "/home/braydenprice/Desktop/gray-area-knives/node_modules/.pnpm/nuxt@3.5.1_@types+node@18.16.14_eslint@8.41.0/node_modules/nuxt/dist/pages/runtime/page";
+const _sfc_main = {
+  __name: 'app',
+  setup(__props, { expose: __expose }) {
+  __expose();
+
+
+const __returned__ = { get TopNavbar() { return TopNavbar } }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+import { resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from "vue"
+import { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from "vue/server-renderer"
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NuxtLayout = __nuxt_component_0
+  const _component_NuxtPage = __nuxt_component_1
+
+  _push(`<div${_ssrRenderAttrs(_attrs)}>`)
+  _push(_ssrRenderComponent($setup["TopNavbar"], null, null, _parent))
+  _push(`<div>`)
+  _push(_ssrRenderComponent(_component_NuxtLayout, null, {
+    default: _withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(_ssrRenderComponent(_component_NuxtPage, null, null, _parent, _scopeId))
+      } else {
+        return [
+          _createVNode(_component_NuxtPage)
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</div></div>`)
+}
+
+import "/home/braydenprice/Desktop/gray-area-knives/app.vue?vue&type=style&index=0&lang.css"
+
+import { useSSRContext as __vite_useSSRContext } from 'vue'
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("app.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+import _export_sfc from 'plugin-vue:export-helper'
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/braydenprice/Desktop/gray-area-knives/app.vue"]])
+
+
+at /app.vue
